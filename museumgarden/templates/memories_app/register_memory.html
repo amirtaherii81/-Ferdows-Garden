@@ -1,0 +1,26 @@
+{% extends 'main_template.html' %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+{% block title %}ثبت خاطره{% endblock title %}
+{% block content %}
+
+<h1 class="text-center text-primary">ورود کاربر</h1>
+<div class="row justify-content-md-center"></div>
+    <form class="col-md-6" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ memory_form.as_p }}
+        {{ image_formset.as_p }}
+        <button type="submit">ثبت خاطره</button>
+        <hr>
+    </form>
+
+{% endblock content %}
+
+
+<form class="col-md-6" action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ memory_form.as_p }}
+    {{ image_formset.as_p }}
+    <button type="submit">ثبت خاطره</button>
+    <hr>
+</form>

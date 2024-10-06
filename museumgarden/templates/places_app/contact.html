@@ -1,0 +1,19 @@
+{% extends 'main_template.html' %}
+
+{% block title %}
+  فرم
+{% endblock %}
+{% block content %}
+  <h2>فرم ارسال پیام توسط کاربر</h2>
+  <hr>
+  <form action="" method="post">
+    {% csrf_token %}
+    <div class="div1">نام و نام خانوادگی : {{ form.full_name }}</div>
+    <div class="div1">ایمیل : {{ form.email }}</div>
+    <div class="div1">عنوان : {{ form.subject }}</div>
+    <div class="div1">پیام : {{ form.message }}</div>
+    <div>
+      <input type="submit" value="ثبت" />
+    </div>
+  </form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'main_template.html' %}
+
+{% block title %}
+  کارگاه ها
+{% endblock %}
+
+{% block content %}
+  <main class="container">
+    {% for workshop in workshops %}
+      <div style="margin: 10px;">
+        <div style="background-color: gray;">
+          <h2>{{ workshop.title }}</h2>
+        </div>
+        <div>
+          <img class="img-300x200" src="{{ media_url }}{{ workshop.image_name }}" alt="{{ workshop.title }}" />
+        </div>
+
+        <span style="font-size: 1.5em;">تاریخ و زمان برگزاری</span><p>{{ workshop.date_time }}</p>
+        <span style="font-size: 1.5em;">مکان برگزاری</span> <p>{{ workshop.place }}</p>
+        <span style="font-size: 1.5em;">مدرس</span> <p>{{ workshop.teacher }}</p>
+        <span style="font-size: 1.5em;">اطلاعات بیشتر</span><p>{{ workshop.information }}</p>
+        <span style="font-size: 1.5em;">شرایط ثبت نام</span><p>{{ workshop.registration }}</p>
+        {% if workshop.status_id == 1 %}
+          <a class="btn btn-success" href="{% url "workshops:workshopreport" workshop.id %}">مشاهده گزارش کارگاه</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </main>
+{% endblock %}

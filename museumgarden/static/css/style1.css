@@ -1,0 +1,51 @@
+
+
+
+.jumbotron{
+    background-color: aqua !important;
+    padding: 0.5rem 0.5rem !important;
+    margin-bottom: 0px !important;
+}
+
+.logo-100{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+body{
+    direction: rtl;
+}
+
+.img-300x200{
+    width: 300px !important;
+    height: 200px !important;
+}
+
+.description{
+    min-height: 200px;
+    max-height: 200px !important;
+    overflow: hidden !important;
+
+}
+
+.value1{
+    color: red;
+}
+
+/* pre {
+    max-height: 150px;
+    overflow-y: auto;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-align: left !important;
+    transform: rotate(180deg); 
+} */
+
+
+.div1 {
+    padding: 20px;
+}
+
+.fa-heart-o{
+    cursor: pointer;
+}

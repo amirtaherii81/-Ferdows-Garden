@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93d34f34-f742-4441-a657-9c14481f26d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/museumgarden/museumgarden/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/museumgarden/museumgarden/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/museumgarden/museumgarden/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/museumgarden/museumgarden/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/museumgarden/static/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/museumgarden/static/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/museumgarden/templates/main_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/museumgarden/templates/main_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/museumgarden/templates/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/museumgarden/templates/partials/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/museumgarden/templates/partials/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/museumgarden/templates/partials/script.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2frCJ2ZK4HQOqZfTYsEAFl0j7br" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93d34f34-f742-4441-a657-9c14481f26d1" name="Changes" comment="" />
+      <created>1714549747282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714549747282</updated>
+      <workItem from="1714549749583" duration="131000" />
+      <workItem from="1715325191455" duration="39000" />
+      <workItem from="1715526344323" duration="1986000" />
+      <workItem from="1715591357666" duration="423000" />
+      <workItem from="1715692713861" duration="490000" />
+      <workItem from="1715760464827" duration="1886000" />
+      <workItem from="1716154433845" duration="340000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MUSEUM_GARDEN$views.coverage" NAME="views Coverage Results" MODIFIED="1715528136274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/museumgarden/apps/accounts" />
+  </component>
+</project>

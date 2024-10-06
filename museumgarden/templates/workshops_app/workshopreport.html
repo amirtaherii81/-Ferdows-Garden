@@ -1,0 +1,19 @@
+{% extends 'main_template.html' %}
+
+{% block title %}
+  گزارش کارگاه
+{% endblock %}
+
+{% block content %}
+  <main>
+    <span>تعداد گزارش کارگاه: <strong>{{ workshop.view_number }}</strong>بازدید</span>
+    <hr>
+    <h3>متن گزارش کارگاه</h3>
+    {% autoescape off %}
+        {{workshop.report_text}}
+    {% endautoescape %}
+    {% if image in image_list %}
+        <img src="{{media_url}}images/workshop/reports/{{workshop.id}}/{{image}}" alt="کارگاه">
+    {% endif %}
+  </main>
+{% endblock %}

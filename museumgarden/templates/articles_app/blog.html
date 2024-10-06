@@ -1,0 +1,43 @@
+{% extends 'main_template.html' %}
+
+{% block title %}
+  blog
+{% endblock %}
+
+{% block content %}
+  <main>
+    <h1 style="text-align: center;">مقاله ها</h1>
+    <hr>
+    {% for article in articles %}
+      {% if article.is_active == True %}
+          <h3>{{ article.title }}</h3>
+          <br />
+          <p>{{ article.short_text }}</p>
+          {% for x in article_author %}{% endfor %}
+          {% if x.article_id == article.id %}
+            {% for author in authors %}
+              {% if author.id == x.author.id %}{% endif %}
+              <span>{{ suthor.name }} {{ author.family }} &nbsp;</span>
+            {% endfor %}
+          {% endif %}
+
+
+          <div>
+            <i class="fa fa-list-alt"></i> <span>{{ article.group }}</span>
+            <br>
+            <span>{{ article.update_date }}</span>
+            <span>{{ article.view_number }}</span>
+            <br>
+            <a href="{% url "articles:blog_details" article.slug %}">مشاهده مقاله</a>
+          </div>
+          <h4>{{ article.slug }}</h4>
+
+
+          <img src="{{ media_url }}images/articles/{{ article.image_name }}" alt="تصویر اصلی مقاله">
+
+      {% endif %}
+    {% endfor %}
+
+
+  </main>
+{% endblock %}

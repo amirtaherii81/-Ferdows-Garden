@@ -1,0 +1,39 @@
+{% extends 'main_template.html' %}
+
+{% block title %}
+  سرچ
+{% endblock %}
+
+{% block content %}
+{% if memories %}
+  {% for memory in memories %}
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ memory.memory_title }}</h5>
+        <p class="card-text">{{ memory.memory_text }}</p>
+        {% for image in memory.images.all %}
+          <img class="img-thumbnail img-300x200" src="{{ media_url }}{{ image.memory_image_name }}" alt="{{image.title}}" />
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+  {% else %}
+    <h3>خاطره ای با این عنوان یافت نشد</h3>
+  {% endif %}
+
+  <hr class="divider">
+
+  {% if workshops %}
+  <main>
+    {% for workshop in workshops %}
+        <h2>{{workshop.title}}</h2>
+        <img class="img-thumbnail img-300x200" src="{{ media_url }}{{ workshop.image_name }}" alt="{{workshop.title}}" />
+    {% endfor %}
+  </main>
+  {% else %}
+  <h3>
+  کارگاهی با این عنوان یافت نشد
+</h3>
+  {% endif %}
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'main_template.html' %}
+
+{% block title %}
+  قوانین و مقررات
+{% endblock %}
+{% block content %}
+  <h2>زمان های بازدید</h2>
+  <ul>
+    {% for place in places %}
+      <li>
+        روز های بازدید <strong>{{place.place_name}}</strong> : <span class='value1'>{{place.visiting_day}}</span>
+        |
+        ساعت بازدید <strong>{{place.place_name}}</strong> : <span class='value1'>{{place.visiting_hour}}</span>
+      </li>
+    {% endfor %}
+  </ul>
+<hr>
+<h2>نرخ بلیط</h2>
+<ul>
+  {% for ticket in ticket_price %}
+    <li>
+      <span>بهای بلیط</span>
+      <span>{{ticket.place}}</span>
+      <span>برای بازدید کننده</span>
+      <span>{{ticket.visitor_type}}</span>
+      <span> : </span>
+      <span>{{ticket.price}}</span>
+
+    </li>
+  {% endfor %}
+</ul>
+<hr>
+{% comment %} <div class="col-md-6"> {% endcomment %}
+  {% for place in places %}
+    <pre >
+      {{place.rules}}
+    </pre>
+  {% endfor %}
+{% comment %} </div> {% endcomment %}
+
+
+
+{% endblock %}
